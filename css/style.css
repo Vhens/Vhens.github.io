@@ -187,6 +187,11 @@ body {
     margin: 0 0.833333333333333%;
   }
 }
+@media screen and (min-width: 768px) {
+  #main {
+    float: right;
+  }
+}
 .article-date,
 .article-category-link,
 .archive-year,
@@ -1313,7 +1318,7 @@ pre .javascript .function {
   text-decoration: none;
 }
 .widget a:hover {
-  text-decoration: underline;
+  color: #87cefa;
 }
 .widget ul ul,
 .widget ol ul,
