@@ -6,27 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>hexo教程 | Vhen</title>
+  <title>Tag: hexo | Vhen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、安装node (http://nodejs.cn/)
-2、安装git (https://git-for-windows.github.io/)
-3、申请github (https://github.com/)
-4、配置github page123新建repo设置名字为username.github.io点击setting，选择launch automatic page generater，然后">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo教程">
-<meta property="og:url" content="http://yoursite.com/2016/11/19/hexo教程/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Vhen">
+<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
 <meta property="og:site_name" content="Vhen">
-<meta property="og:description" content="1、安装node (http://nodejs.cn/)
-2、安装git (https://git-for-windows.github.io/)
-3、申请github (https://github.com/)
-4、配置github page123新建repo设置名字为username.github.io点击setting，选择launch automatic page generater，然后">
-<meta property="og:updated_time" content="2016-11-19T07:15:42.053Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo教程">
-<meta name="twitter:description" content="1、安装node (http://nodejs.cn/)
-2、安装git (https://git-for-windows.github.io/)
-3、申请github (https://github.com/)
-4、配置github page123新建repo设置名字为username.github.io点击setting，选择launch automatic page generater，然后">
+<meta name="twitter:title" content="Vhen">
   
     <link rel="alternative" href="/atom.xml" title="Vhen" type="application/atom+xml">
   
@@ -154,96 +141,54 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-hexo教程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      hexo教程
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/11/19/hexo教程/" class="archive-article-date">
+  	<time datetime="2016-11-18T16:42:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/11/19/hexo教程/">hexo教程</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、安装node (<a href="http://nodejs.cn/" target="_blank" rel="external">http://nodejs.cn/</a>)</p>
-<p>2、安装git (<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a>)</p>
-<p>3、申请github (<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>)</p>
-<p>4、配置github page<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">新建repo</div><div class="line">设置名字为username.github.io</div><div class="line">点击setting，选择launch automatic page generater，然后点击<span class="built_in">continue</span> to layouts，开通pages</div></pre></td></tr></table></figure></p>
-<p>5、username.github.io复制github新建repo地址到本地</p>
-<p>6、安装hexo (<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a>)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line"><span class="built_in">cd</span> 从github克隆到本地username.github.io目录中</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line">hexo generate =&gt; hexo g</div><div class="line">hexo server =&gt; hexo s</div></pre></td></tr></table></figure></p>
-<p>7、配置SSH key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh 或<span class="built_in">cd</span> .ssh(检查本机是否有ssh key设置)</div><div class="line">ssh-keygen -t rsa -C <span class="string">"xxxxxx@qq.com"</span></div><div class="line">进入c:/Users/xxxx_000/.ssh/目录下把id_rsa.pub文件内容复制到github “▼”→Settings→SSH kyes→Add SSH key</div><div class="line">git config --global user.name “your_username”  <span class="comment">#设置用户名</span></div><div class="line">git config --global user.email “your_registered_github_Email”</div><div class="line">$ ssh -T git@github.com(测试ssh keys是否设置成功)</div></pre></td></tr></table></figure></p>
-<p>8、推到github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo deploy =&gt; hexo d</div><div class="line">cp -R public/* username.github.io</div><div class="line"><span class="built_in">cd</span> username.github.io</div><div class="line">git add .</div><div class="line">git commit -m “update”</div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
-<p>9、卸载hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-cli -g</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/19/hexo教程/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:42:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 	</div>
 
-      
+          
 
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2016/11/19/移动端性能优化/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          移动端性能优化
-        
-      </div>
-    </a>
   
   
-</nav>
+    </div></section>
+  
 
-
-
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-	    <a class="jiathis_button_twitter"></a>
-	    <a class="jiathis_button_plus"></a> 
-	    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
-
+    
 
 
       </div>
@@ -266,9 +211,9 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
