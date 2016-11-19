@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Vhen</title>
+  <title>PHP自定义函数 | Vhen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Vhen">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1、判断用户输入是否存在敏感词1234567891011function sensitive($content)&amp;#123;    //$arr=C(&apos;SENSITIVE&apos;);    import(&quot;ORG.SensitiveFilter&quot;);//添加敏感词类文件SensitiveFilter.php    $arr=SensitiveFilter::getWord();    foreach (">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP自定义函数">
+<meta property="og:url" content="http://yoursite.com/2016/11/20/PHP自定义函数/index.html">
 <meta property="og:site_name" content="Vhen">
+<meta property="og:description" content="1、判断用户输入是否存在敏感词1234567891011function sensitive($content)&amp;#123;    //$arr=C(&apos;SENSITIVE&apos;);    import(&quot;ORG.SensitiveFilter&quot;);//添加敏感词类文件SensitiveFilter.php    $arr=SensitiveFilter::getWord();    foreach (">
+<meta property="og:updated_time" content="2016-11-19T18:36:30.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vhen">
+<meta name="twitter:title" content="PHP自定义函数">
+<meta name="twitter:description" content="1、判断用户输入是否存在敏感词1234567891011function sensitive($content)&amp;#123;    //$arr=C(&apos;SENSITIVE&apos;);    import(&quot;ORG.SensitiveFilter&quot;);//添加敏感词类文件SensitiveFilter.php    $arr=SensitiveFilter::getWord();    foreach (">
   
     <link rel="alternative" href="/atom.xml" title="Vhen" type="application/atom+xml">
   
@@ -141,9 +145,7 @@
 </nav>
 
       <div class="body-wrap">
-        
-  
-    <article id="post-PHP自定义函数" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-PHP自定义函数" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -152,8 +154,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/20/PHP自定义函数/">PHP自定义函数</a>
+    <h1 class="article-title" itemprop="name">
+      PHP自定义函数
     </h1>
   
 
@@ -201,54 +203,37 @@
   </div>
 </article>
 
-
-
-
-
-
-
-
-
-
   
-    <article id="post-PHP年龄计算" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/19/PHP年龄计算/">PHP年龄计算</a>
-    </h1>
   
+    <a href="/2016/11/19/PHP年龄计算/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP年龄计算</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> * @description    取得两个时间戳相差的年龄</div><div class="line"> * @before         较小的时间戳</div><div class="line"> * @after          较大的时间戳</div><div class="line"> * @<span class="built_in">return</span> str     返回相差年龄y岁m月d天</div><div class="line">**/</div><div class="line"><span class="keyword">function</span> datediffage(<span class="variable">$before</span>, <span class="variable">$after</span>) &#123;</div><div class="line"> <span class="keyword">if</span> (<span class="variable">$before</span>&gt;<span class="variable">$after</span>) &#123;</div><div class="line">  <span class="variable">$b</span> = getdate(<span class="variable">$after</span>);</div><div class="line">  <span class="variable">$a</span> = getdate(<span class="variable">$before</span>);</div><div class="line"> &#125;</div><div class="line"> <span class="keyword">else</span> &#123;</div><div class="line">  <span class="variable">$b</span> = getdate(<span class="variable">$before</span>);</div><div class="line">  <span class="variable">$a</span> = getdate(<span class="variable">$after</span>);</div><div class="line"> &#125;</div><div class="line"> <span class="variable">$n</span> = array(1=&gt;31,2=&gt;28,3=&gt;31,4=&gt;30,5=&gt;31,6=&gt;30,7=&gt;31,8=&gt;31,9=&gt;30,10=&gt;31,11=&gt;30,12=&gt;31);</div><div class="line"> <span class="variable">$y</span>=<span class="variable">$m</span>=<span class="variable">$d</span>=0;</div><div class="line"> <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mday'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mday'</span>]) &#123; //天相减为正</div><div class="line">  <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mon'</span>]) &#123;//月相减为正</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>];<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">else</span> &#123; //月相减为负，借年</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12;</div><div class="line">  &#125;</div><div class="line">  <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>];</div><div class="line"> &#125;</div><div class="line"> <span class="keyword">else</span> &#123;  //天相减为负，借月</div><div class="line">  <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]==1) &#123; //1月，借年</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12;<span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+<span class="variable">$n</span>[12];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">else</span> &#123;</div><div class="line">   <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]==3) &#123; //3月，判断闰年取得2月天数</div><div class="line">    <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+(<span class="variable">$a</span>[<span class="string">'year'</span>]%4==0?29:28);</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">else</span> &#123;</div><div class="line">    <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+<span class="variable">$n</span>[<span class="variable">$a</span>[<span class="string">'mon'</span>]-1];</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mon'</span>]+1) &#123; //借月后，月相减为正</div><div class="line">    <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>];<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]-1;</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">else</span> &#123; //借月后，月相减为负，借年</div><div class="line">    <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12-1;</div><div class="line">   &#125;</div><div class="line">  &#125;</div><div class="line"> &#125;</div><div class="line"> <span class="built_in">return</span> (<span class="variable">$y</span>==0?<span class="string">''</span>:<span class="variable">$y</span>.<span class="string">'岁'</span>).(<span class="variable">$m</span>==0?<span class="string">''</span>:<span class="variable">$m</span>.<span class="string">'个月'</span>).(<span class="variable">$d</span>==0?<span class="string">''</span>:<span class="variable">$d</span>.<span class="string">'天'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/19/PHP年龄计算/" class="archive-article-date">
-  	<time datetime="2016-11-19T15:47:47.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
@@ -256,173 +241,6 @@
 
 
 
-
-
-
-  
-    <article id="post-thinkphp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/19/thinkphp/">ThinkPHP</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一、ThinkPHP视图 (<a href="http://document.thinkphp.cn/manual_3_2.html" target="_blank" rel="external">http://document.thinkphp.cn/manual_3_2.html</a>)<br>1、index.php<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'BIND_MODULE'</span>,<span class="string">'View'</span>);//生成模块</div><div class="line">define(<span class="string">'BUILD_DIR_SECURE'</span>,<span class="literal">false</span>);//关闭安全目录文件的生成</div></pre></td></tr></table></figure></p>
-<p>2、config.php<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">retuan array(</div><div class="line">    <span class="string">'DEFAULT_V_LAYER'</span>=&gt;<span class="string">'Template'</span>,//定义默认视图层</div><div class="line">    <span class="string">'TMPL_TEMPLATE_SUFFIX'</span>=&gt;<span class="string">'.tml'</span>,//定义模板文件后缀</div><div class="line">    <span class="string">'TMPL_FILE_DEPR'</span>=&gt;<span class="string">'_'</span>,//定义连接符，减少目录层次</div><div class="line">    <span class="string">'VIEW_PATH'</span>=&gt;<span class="string">'.Theme/views/'</span>,//定位文件生成目录位置</div><div class="line">    -</div><div class="line">    <span class="string">'DEFAULT_THEME'</span>=&gt;<span class="string">'default'</span>,//指定默认主题</div><div class="line">    <span class="string">'TMPL_DETECT_THEME'</span>=&gt;<span class="literal">true</span>,//</div><div class="line">    <span class="string">'THEME_LIST'</span>=&gt;<span class="string">'default,other'</span>,</div><div class="line">)</div></pre></td></tr></table></figure></p>
-<p>二、ThinkPHP模型数据<br>1、数据自动验证<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
-<p>2、数据自动填充<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">protected <span class="variable">$_auto</span>=array(</div><div class="line">    array(</div><div class="line">        <span class="string">"password"</span>,</div><div class="line">        <span class="string">"md5"</span>,</div><div class="line">        <span class="string">"self::MODEL_BOTH"</span>,</div><div class="line">        <span class="string">"function"</span></div><div class="line">    ),</div><div class="line">    array(</div><div class="line">        <span class="string">"create_time"</span>,</div><div class="line">        <span class="string">"time"</span>,</div><div class="line">        <span class="string">"self::MODEL_INSERT"</span></div><div class="line">    )</div><div class="line">)</div></pre></td></tr></table></figure></p>
-<p>3、定义与实例化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">---UserModel.class.php</div><div class="line">namespace Models\Model;</div><div class="line">use Think\Model;</div><div class="line">class UserModel extends Model&#123;</div><div class="line">    protected <span class="variable">$tablePrefix</span>=<span class="string">"think_"</span>;//表前缀对应数据库User表</div><div class="line">    protected <span class="variable">$tableName</span>=<span class="string">"member"</span>;//对应数据库member表</div><div class="line"></div><div class="line">    protected <span class="variable">$fieds</span>=array(</div><div class="line">        <span class="string">'id'</span>,</div><div class="line">        <span class="string">'userName'</span>,</div><div class="line">        <span class="string">'passWord'</span>,</div><div class="line">        <span class="string">'_pk'</span>=&gt;<span class="string">'id'</span>,</div><div class="line">        <span class="string">'_type'</span>=&gt;array(</div><div class="line">            <span class="string">'id'</span>=&gt;<span class="string">'int'</span>,</div><div class="line">            <span class="string">'userName'</span>=&gt;<span class="string">'char'</span>,</div><div class="line">            <span class="string">'passWord'</span>=&gt;<span class="string">'char'</span></div><div class="line">        )</div><div class="line">    )</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">---IndexController.class.php</div><div class="line">namespace Models\Controller;</div><div class="line">use Think\Controller;</div><div class="line">class IndexController extends Controller&#123;</div><div class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">index</span></span>()&#123;</div><div class="line">        <span class="variable">$user</span>=M(<span class="string">'User'</span>);</div><div class="line">        <span class="variable">$user</span>=D(<span class="string">'User'</span>);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/19/thinkphp/" class="archive-article-date">
-  	<time datetime="2016-11-19T12:16:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ThinkPHP/">ThinkPHP</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-移动端性能优化" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/19/移动端性能优化/">移动端性能优化</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/19/移动端性能优化/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:43:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo教程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/19/hexo教程/">hexo教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、安装node (<a href="http://nodejs.cn/" target="_blank" rel="external">http://nodejs.cn/</a>)</p>
-<p>2、安装git (<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a>)</p>
-<p>3、申请github (<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>)</p>
-<p>4、配置github page<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">新建repo</div><div class="line">设置名字为username.github.io</div><div class="line">点击setting，选择launch automatic page generater，然后点击<span class="built_in">continue</span> to layouts，开通pages</div></pre></td></tr></table></figure></p>
-<p>5、username.github.io复制github新建repo地址到本地</p>
-<p>6、安装hexo (<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a>)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line"><span class="built_in">cd</span> 从github克隆到本地username.github.io目录中</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line">hexo generate =&gt; hexo g</div><div class="line">hexo server =&gt; hexo s</div></pre></td></tr></table></figure></p>
-<p>7、配置SSH key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh 或<span class="built_in">cd</span> .ssh(检查本机是否有ssh key设置)</div><div class="line">ssh-keygen -t rsa -C <span class="string">"xxxxxx@qq.com"</span></div><div class="line">进入c:/Users/xxxx_000/.ssh/目录下把id_rsa.pub文件内容复制到github “▼”→Settings→SSH kyes→Add SSH key</div><div class="line">git config --global user.name “your_username”  <span class="comment">#设置用户名</span></div><div class="line">git config --global user.email “your_registered_github_Email”</div><div class="line">$ ssh -T git@github.com(测试ssh keys是否设置成功)</div></pre></td></tr></table></figure></p>
-<p>8、推到github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo deploy =&gt; hexo d</div><div class="line">cp -R public/* username.github.io</div><div class="line"><span class="built_in">cd</span> username.github.io</div><div class="line">git add .</div><div class="line">git commit -m “update”</div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
-<p>9、卸载hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm uninstall hexo-cli -g</div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      <a href="/2016/11/19/hexo教程/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:42:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
-</a>
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
-
-      
-
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-  
 
 
       </div>
@@ -444,8 +262,8 @@
 		fancybox: true,
 		mathjax: false,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

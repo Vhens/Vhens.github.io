@@ -6,15 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>移动端性能优化 | Vhen</title>
+  <title>PHP年龄计算 | Vhen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="移动端性能优化">
-<meta property="og:url" content="http://yoursite.com/2016/11/19/移动端性能优化/index.html">
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647/* * @description    取得两个时间戳相差的年龄 * @before         较小的时间戳 * @after          较大的时间戳 * @return str     返回相差年龄y岁m月d天*">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP年龄计算">
+<meta property="og:url" content="http://yoursite.com/2016/11/19/PHP年龄计算/index.html">
 <meta property="og:site_name" content="Vhen">
-<meta property="og:updated_time" content="2016-11-19T12:15:32.723Z">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647/* * @description    取得两个时间戳相差的年龄 * @before         较小的时间戳 * @after          较大的时间戳 * @return str     返回相差年龄y岁m月d天*">
+<meta property="og:updated_time" content="2016-11-19T16:02:56.073Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动端性能优化">
+<meta name="twitter:title" content="PHP年龄计算">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647/* * @description    取得两个时间戳相差的年龄 * @before         较小的时间戳 * @after          较大的时间戳 * @return str     返回相差年龄y岁m月d天*">
   
     <link rel="alternative" href="/atom.xml" title="Vhen" type="application/atom+xml">
   
@@ -142,7 +145,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-移动端性能优化" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-PHP年龄计算" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -152,7 +155,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      移动端性能优化
+      PHP年龄计算
     </h1>
   
 
@@ -160,18 +163,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">/*</div><div class="line"> * @description    取得两个时间戳相差的年龄</div><div class="line"> * @before         较小的时间戳</div><div class="line"> * @after          较大的时间戳</div><div class="line"> * @<span class="built_in">return</span> str     返回相差年龄y岁m月d天</div><div class="line">**/</div><div class="line"><span class="keyword">function</span> datediffage(<span class="variable">$before</span>, <span class="variable">$after</span>) &#123;</div><div class="line"> <span class="keyword">if</span> (<span class="variable">$before</span>&gt;<span class="variable">$after</span>) &#123;</div><div class="line">  <span class="variable">$b</span> = getdate(<span class="variable">$after</span>);</div><div class="line">  <span class="variable">$a</span> = getdate(<span class="variable">$before</span>);</div><div class="line"> &#125;</div><div class="line"> <span class="keyword">else</span> &#123;</div><div class="line">  <span class="variable">$b</span> = getdate(<span class="variable">$before</span>);</div><div class="line">  <span class="variable">$a</span> = getdate(<span class="variable">$after</span>);</div><div class="line"> &#125;</div><div class="line"> <span class="variable">$n</span> = array(1=&gt;31,2=&gt;28,3=&gt;31,4=&gt;30,5=&gt;31,6=&gt;30,7=&gt;31,8=&gt;31,9=&gt;30,10=&gt;31,11=&gt;30,12=&gt;31);</div><div class="line"> <span class="variable">$y</span>=<span class="variable">$m</span>=<span class="variable">$d</span>=0;</div><div class="line"> <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mday'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mday'</span>]) &#123; //天相减为正</div><div class="line">  <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mon'</span>]) &#123;//月相减为正</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>];<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">else</span> &#123; //月相减为负，借年</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12;</div><div class="line">  &#125;</div><div class="line">  <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>];</div><div class="line"> &#125;</div><div class="line"> <span class="keyword">else</span> &#123;  //天相减为负，借月</div><div class="line">  <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]==1) &#123; //1月，借年</div><div class="line">   <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12;<span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+<span class="variable">$n</span>[12];</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">else</span> &#123;</div><div class="line">   <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]==3) &#123; //3月，判断闰年取得2月天数</div><div class="line">    <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+(<span class="variable">$a</span>[<span class="string">'year'</span>]%4==0?29:28);</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">else</span> &#123;</div><div class="line">    <span class="variable">$d</span>=<span class="variable">$a</span>[<span class="string">'mday'</span>]-<span class="variable">$b</span>[<span class="string">'mday'</span>]+<span class="variable">$n</span>[<span class="variable">$a</span>[<span class="string">'mon'</span>]-1];</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">if</span> (<span class="variable">$a</span>[<span class="string">'mon'</span>]&gt;=<span class="variable">$b</span>[<span class="string">'mon'</span>]+1) &#123; //借月后，月相减为正</div><div class="line">    <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>];<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]-1;</div><div class="line">   &#125;</div><div class="line">   <span class="keyword">else</span> &#123; //借月后，月相减为负，借年</div><div class="line">    <span class="variable">$y</span>=<span class="variable">$a</span>[<span class="string">'year'</span>]-<span class="variable">$b</span>[<span class="string">'year'</span>]-1;<span class="variable">$m</span>=<span class="variable">$a</span>[<span class="string">'mon'</span>]-<span class="variable">$b</span>[<span class="string">'mon'</span>]+12-1;</div><div class="line">   &#125;</div><div class="line">  &#125;</div><div class="line"> &#125;</div><div class="line"> <span class="built_in">return</span> (<span class="variable">$y</span>==0?<span class="string">''</span>:<span class="variable">$y</span>.<span class="string">'岁'</span>).(<span class="variable">$m</span>==0?<span class="string">''</span>:<span class="variable">$m</span>.<span class="string">'个月'</span>).(<span class="variable">$d</span>==0?<span class="string">''</span>:<span class="variable">$d</span>.<span class="string">'天'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/19/移动端性能优化/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:43:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+      <a href="/2016/11/19/PHP年龄计算/" class="archive-article-date">
+  	<time datetime="2016-11-19T15:47:47.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
 	</div>
 
       
@@ -184,18 +187,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/19/thinkphp/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/11/20/PHP自定义函数/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          ThinkPHP
+          PHP自定义函数
         
       </div>
     </a>
   
   
-    <a href="/2016/11/19/hexo教程/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo教程</div>
+    <a href="/2016/11/19/thinkphp/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ThinkPHP</div>
       <i class="icon-circle-right"></i>
     </a>
   

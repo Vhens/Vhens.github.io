@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>移动端性能优化 | Vhen</title>
+  <title>ThinkPHP | Vhen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="移动端性能优化">
-<meta property="og:url" content="http://yoursite.com/2016/11/19/移动端性能优化/index.html">
+  <meta name="description" content="一、ThinkPHP视图 (http://document.thinkphp.cn/manual_3_2.html)1、index.php12define(&apos;BIND_MODULE&apos;,&apos;View&apos;);//生成模块define(&apos;BUILD_DIR_SECURE&apos;,false);//关闭安全目录文件的生成
+2、config.php12345678910retuan array(    &apos;DEFAUL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ThinkPHP">
+<meta property="og:url" content="http://yoursite.com/2016/11/19/thinkphp/index.html">
 <meta property="og:site_name" content="Vhen">
-<meta property="og:updated_time" content="2016-11-19T12:15:32.723Z">
+<meta property="og:description" content="一、ThinkPHP视图 (http://document.thinkphp.cn/manual_3_2.html)1、index.php12define(&apos;BIND_MODULE&apos;,&apos;View&apos;);//生成模块define(&apos;BUILD_DIR_SECURE&apos;,false);//关闭安全目录文件的生成
+2、config.php12345678910retuan array(    &apos;DEFAUL">
+<meta property="og:updated_time" content="2016-11-19T17:45:28.566Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动端性能优化">
+<meta name="twitter:title" content="ThinkPHP">
+<meta name="twitter:description" content="一、ThinkPHP视图 (http://document.thinkphp.cn/manual_3_2.html)1、index.php12define(&apos;BIND_MODULE&apos;,&apos;View&apos;);//生成模块define(&apos;BUILD_DIR_SECURE&apos;,false);//关闭安全目录文件的生成
+2、config.php12345678910retuan array(    &apos;DEFAUL">
   
     <link rel="alternative" href="/atom.xml" title="Vhen" type="application/atom+xml">
   
@@ -142,7 +148,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-移动端性能优化" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-thinkphp" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -152,7 +158,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      移动端性能优化
+      ThinkPHP
     </h1>
   
 
@@ -160,18 +166,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>一、ThinkPHP视图 (<a href="http://document.thinkphp.cn/manual_3_2.html" target="_blank" rel="external">http://document.thinkphp.cn/manual_3_2.html</a>)<br>1、index.php<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'BIND_MODULE'</span>,<span class="string">'View'</span>);//生成模块</div><div class="line">define(<span class="string">'BUILD_DIR_SECURE'</span>,<span class="literal">false</span>);//关闭安全目录文件的生成</div></pre></td></tr></table></figure></p>
+<p>2、config.php<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">retuan array(</div><div class="line">    <span class="string">'DEFAULT_V_LAYER'</span>=&gt;<span class="string">'Template'</span>,//定义默认视图层</div><div class="line">    <span class="string">'TMPL_TEMPLATE_SUFFIX'</span>=&gt;<span class="string">'.tml'</span>,//定义模板文件后缀</div><div class="line">    <span class="string">'TMPL_FILE_DEPR'</span>=&gt;<span class="string">'_'</span>,//定义连接符，减少目录层次</div><div class="line">    <span class="string">'VIEW_PATH'</span>=&gt;<span class="string">'.Theme/views/'</span>,//定位文件生成目录位置</div><div class="line">    -</div><div class="line">    <span class="string">'DEFAULT_THEME'</span>=&gt;<span class="string">'default'</span>,//指定默认主题</div><div class="line">    <span class="string">'TMPL_DETECT_THEME'</span>=&gt;<span class="literal">true</span>,//</div><div class="line">    <span class="string">'THEME_LIST'</span>=&gt;<span class="string">'default,other'</span>,</div><div class="line">)</div></pre></td></tr></table></figure></p>
+<p>二、ThinkPHP模型数据<br>1、数据自动验证<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<p>2、数据自动填充<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">protected <span class="variable">$_auto</span>=array(</div><div class="line">    array(</div><div class="line">        <span class="string">"password"</span>,</div><div class="line">        <span class="string">"md5"</span>,</div><div class="line">        <span class="string">"self::MODEL_BOTH"</span>,</div><div class="line">        <span class="string">"function"</span></div><div class="line">    ),</div><div class="line">    array(</div><div class="line">        <span class="string">"create_time"</span>,</div><div class="line">        <span class="string">"time"</span>,</div><div class="line">        <span class="string">"self::MODEL_INSERT"</span></div><div class="line">    )</div><div class="line">)</div></pre></td></tr></table></figure></p>
+<p>3、定义与实例化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">---UserModel.class.php</div><div class="line">namespace Models\Model;</div><div class="line">use Think\Model;</div><div class="line">class UserModel extends Model&#123;</div><div class="line">    protected <span class="variable">$tablePrefix</span>=<span class="string">"think_"</span>;//表前缀对应数据库User表</div><div class="line">    protected <span class="variable">$tableName</span>=<span class="string">"member"</span>;//对应数据库member表</div><div class="line"></div><div class="line">    protected <span class="variable">$fieds</span>=array(</div><div class="line">        <span class="string">'id'</span>,</div><div class="line">        <span class="string">'userName'</span>,</div><div class="line">        <span class="string">'passWord'</span>,</div><div class="line">        <span class="string">'_pk'</span>=&gt;<span class="string">'id'</span>,</div><div class="line">        <span class="string">'_type'</span>=&gt;array(</div><div class="line">            <span class="string">'id'</span>=&gt;<span class="string">'int'</span>,</div><div class="line">            <span class="string">'userName'</span>=&gt;<span class="string">'char'</span>,</div><div class="line">            <span class="string">'passWord'</span>=&gt;<span class="string">'char'</span></div><div class="line">        )</div><div class="line">    )</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">---IndexController.class.php</div><div class="line">namespace Models\Controller;</div><div class="line">use Think\Controller;</div><div class="line">class IndexController extends Controller&#123;</div><div class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">index</span></span>()&#123;</div><div class="line">        <span class="variable">$user</span>=M(<span class="string">'User'</span>);</div><div class="line">        <span class="variable">$user</span>=D(<span class="string">'User'</span>);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/19/移动端性能优化/" class="archive-article-date">
-  	<time datetime="2016-11-18T16:43:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+      <a href="/2016/11/19/thinkphp/" class="archive-article-date">
+  	<time datetime="2016-11-19T12:16:12.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ThinkPHP/">ThinkPHP</a></li></ul>
 	</div>
 
       
@@ -184,18 +196,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/19/thinkphp/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/11/19/PHP年龄计算/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          ThinkPHP
+          PHP年龄计算
         
       </div>
     </a>
   
   
-    <a href="/2016/11/19/hexo教程/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">hexo教程</div>
+    <a href="/2016/11/19/移动端性能优化/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">移动端性能优化</div>
       <i class="icon-circle-right"></i>
     </a>
   
