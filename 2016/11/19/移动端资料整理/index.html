@@ -8,13 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>移动端资料整理 | Vhen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="1、H5页面窗口自动调整到设备宽度，并禁止用户缩放页面1&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&amp;gt;
+2、忽略将页面中的数字识别为电话号码1&amp;lt;meta name=&quot;format-">
+<meta property="og:type" content="article">
 <meta property="og:title" content="移动端资料整理">
 <meta property="og:url" content="http://yoursite.com/2016/11/19/移动端资料整理/index.html">
 <meta property="og:site_name" content="Vhen">
-<meta property="og:updated_time" content="2016-11-20T15:07:23.336Z">
+<meta property="og:description" content="1、H5页面窗口自动调整到设备宽度，并禁止用户缩放页面1&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&amp;gt;
+2、忽略将页面中的数字识别为电话号码1&amp;lt;meta name=&quot;format-">
+<meta property="og:updated_time" content="2016-11-21T17:16:13.048Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="移动端资料整理">
+<meta name="twitter:description" content="1、H5页面窗口自动调整到设备宽度，并禁止用户缩放页面1&amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&amp;gt;
+2、忽略将页面中的数字识别为电话号码1&amp;lt;meta name=&quot;format-">
   
     <link rel="alternative" href="/atom.xml" title="Vhen" type="application/atom+xml">
   
@@ -160,7 +166,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1、H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> /&gt;</div></pre></td></tr></table></figure></p>
+<p>2、忽略将页面中的数字识别为电话号码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"format-detection"</span> content=<span class="string">"telephone=no"</span> /&gt;</div></pre></td></tr></table></figure></p>
+<p>3、忽略Android平台中对邮箱地址的识别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"format-detection"</span> content=<span class="string">"email=no"</span> /&gt;</div></pre></td></tr></table></figure></p>
+<p>4、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-capable"</span> content=<span class="string">"yes"</span> /&gt;</div><div class="line">&lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;</div></pre></td></tr></table></figure></p>
+<p>5、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-status-bar-style"</span> content=<span class="string">"black"</span> /&gt;</div><div class="line">&lt;!-- 可选default、black、black-translucent --&gt;</div></pre></td></tr></table></figure></p>
+<p>6、通用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> name=<span class="string">"viewport"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"yes"</span> name=<span class="string">"apple-mobile-web-app-capable"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"black"</span> name=<span class="string">"apple-mobile-web-app-status-bar-style"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"telephone=no"</span> name=<span class="string">"format-detection"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"email=no"</span> name=<span class="string">"format-detection"</span>&gt;</div><div class="line">&lt;title&gt;标题&lt;/title&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"index.css"</span>&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+
       
     </div>
     <div class="article-info article-info-index">
