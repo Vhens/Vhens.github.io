@@ -143,6 +143,63 @@
       <div class="body-wrap">
         
   
+    <article id="post-正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/22/正则表达式/">正则表达式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、校验密码强度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//密码的强度必须是包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间</div><div class="line">^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).&#123;8,10&#125;$</div></pre></td></tr></table></figure></p>
+<p>2、校验中文<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//字符串仅能是中文</div><div class="line">^[\\u4e00-\\u9fa5]&#123;0,&#125;$</div></pre></td></tr></table></figure></p>
+<p>3、 由数字、26个英文字母或下划线组成的字符串<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">^\\w+$</div></pre></td></tr></table></figure></p>
+<p>4、校验E-Mail 地址<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//同密码一样，下面是E-mail地址合规性的正则检查语句。</div><div class="line">[\\w!<span class="comment">#$%&amp;'*+/=?^_`&#123;|&#125;~-]+(?:\\.[\\w!#$%&amp;'*+/=?^_`&#123;|&#125;~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?</span></div></pre></td></tr></table></figure></p>
+<p>5、校验身份证号码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">15位：</div><div class="line">^[1-9]\\d&#123;7&#125;((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d&#123;3&#125;$</div><div class="line">18位：</div><div class="line">^[1-9]\\d&#123;5&#125;[1-9]\\d&#123;3&#125;((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d&#123;3&#125;([0-9]|X)$</div></pre></td></tr></table></figure></p>
+<p>6、 校验日期<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//“yyyy-mm-dd“ 格式的日期校验，已考虑平闰年。</div><div class="line">^(?:(?!0000)[0-9]&#123;4&#125;-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]&#123;2&#125;(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$</div></pre></td></tr></table></figure></p>
+<p>7、校验金额<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//金额校验，精确到2位小数</div><div class="line">^[0-9]+(.[0-9]&#123;2&#125;)?$</div></pre></td></tr></table></figure></p>
+<p>8、校验手机号<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//下面是国内 13、15、18开头的手机号正则表达式</div><div class="line">^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d&#123;8&#125;$</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/22/正则表达式/" class="archive-article-date">
+  	<time datetime="2016-11-21T17:40:48.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-22</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/正则表达式/">-正则表达式</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-checkbox全选与反选" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -391,6 +448,7 @@
 <p>4、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-capable"</span> content=<span class="string">"yes"</span> /&gt;</div><div class="line">&lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;</div></pre></td></tr></table></figure></p>
 <p>5、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-status-bar-style"</span> content=<span class="string">"black"</span> /&gt;</div><div class="line">&lt;!-- 可选default、black、black-translucent --&gt;</div></pre></td></tr></table></figure></p>
 <p>6、通用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> name=<span class="string">"viewport"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"yes"</span> name=<span class="string">"apple-mobile-web-app-capable"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"black"</span> name=<span class="string">"apple-mobile-web-app-status-bar-style"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"telephone=no"</span> name=<span class="string">"format-detection"</span>&gt;</div><div class="line">&lt;meta content=<span class="string">"email=no"</span> name=<span class="string">"format-detection"</span>&gt;</div><div class="line">&lt;title&gt;标题&lt;/title&gt;</div><div class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"index.css"</span>&gt;</div><div class="line">&lt;/head&gt;</div><div class="line"></div><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>7、字体<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">    font-family: <span class="string">"Helvetica Neue"</span>, Helvetica, STHeiTi, sans-serif;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -541,7 +599,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/PHP/" style="font-size: 20px;">PHP</a> <a href="/tags/ThinkPHP/" style="font-size: 10px;">ThinkPHP</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
+    				<a href="/tags/正则表达式/" style="font-size: 10px;">-正则表达式</a> <a href="/tags/PHP/" style="font-size: 20px;">PHP</a> <a href="/tags/ThinkPHP/" style="font-size: 10px;">ThinkPHP</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
     			</div>
     	</section>
     
@@ -553,6 +611,8 @@
   			
   	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://document.thinkphp.cn/manual_3_2.html">ThinkPHP3.2.3手册</a>
   	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.bootcss.com/">Bootstrap</a>
+  	        
   	        </div>
   		
     	</section>
@@ -561,7 +621,7 @@
     
     	<section class="tools-section tools-section-me">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=432506345&amp;type=2&amp;auto=1&amp;width=278&amp;height=32&quot; width=&quot;298&quot; height=&quot;52&quot;  allowNetworking=&quot;all&quot;&gt;&lt;/embed&gt;</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">如果心里因人不爽，最好的办法就是说出来告诉对方。一来自己不会再纠结，二来可以让对方纠结，三来如果对方并不因此纠结，就证明对方压根儿不在意你，那你又何必要为不在意你的人影响自己的心情。有话就说的人不是直肠子，而是不会让自己辛苦的透明人...</div>
   	  	
     	</section>
     
